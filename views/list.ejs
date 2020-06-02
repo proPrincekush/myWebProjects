@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html > 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>to do list</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="\css\styles.css">
+    </head>
+ <body>
+        <!-- <script> 
+            var today = new Date();
+        </script>
+    
+       <p>hey ! today is 
+            <script>document.write(today);</script>
+        </p>
+    
+    -->
+  <div class="date" style="background-color: aquamarine;"> 
+  <% if(kindOfDay ==("saturday"||"sunday")){%> 
+        <h1> Yay! It's weekend.</h1>
+        <h1 style="color: green;"><%= kindOfDay  %> ToDo list</h1>
+        <%} else {%>
+            <h1> Boo! It's weekday.</h1>
+       
+        <h1 style="color: blue;"><%= kindOfDay  %> ToDo list</h1> 
+        <%}%>
+ 
+        <ol>
+ 
+
+            <% for (let i = 0; i < tasks.length; i++) { %>
+                 
+                <li class="txt"><%= tasks[i] %></li>
+ 
+           <% }%>
+
+                
+        </ol>
+    </div>
+    
+<div class="in">
+<form action="/" method="POST">
+    <label for="" class="txt">enter your task :</label>
+    <input type="text" name="task" required>
+    <br>
+    <br>
+    <button type="submit" name="submit" value="Add" class="bt"> Add </button>
+</form>
+
+</div>
+
+    </body>
+</html>

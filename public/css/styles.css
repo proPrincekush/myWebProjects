@@ -1,0 +1,23 @@
+html{
+    background-color: rgb(182, 236, 227);
+}
+.in{
+   background-color: rgb(29, 146, 167); 
+    height: 100px;
+    text-size-adjust: 30px;
+}
+.date{
+    background-color: rgb(115, 170, 98) ;
+}
+.bt{
+    height: 40px;
+    width: 100px;
+    background-color: rgba(168, 25, 235, 0.801);
+    margin: 5px;
+    
+}
+.txt{
+  height: 30px;
+  text-indent: 3px;
+}
+
